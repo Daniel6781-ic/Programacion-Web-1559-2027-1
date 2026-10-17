@@ -1,0 +1,179 @@
+<!Doctype html>
+<html lang="en">
+<head>
+
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="author" content="Luis Daniel Hernández Hernández">
+
+<title>Listas y formularios HTML</title>
+
+</head>
+
+<body>
+    <h1>Listas y formularios</h1>
+    <div>
+        <h2>Listas</h2>
+        <h3>Listas no ordenadas</h3>
+        <ul>   
+            <li>leche</li>
+            <li>carne</li>
+            <li>pan</li>
+            <li>jamon</li>
+            <li>papel</li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>Listas Ordenadas</h3>
+        <ol type="1" start="14" reversed>
+            <li>Catorceavo</li>
+            <li>Treceavo</li>
+            <li>Doceavo</li>
+            <li>Onceavo</li>
+            <li>Decimo</li>
+        </ol>
+    </div>
+
+    <div>
+        <h3>Listas no definidas</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Lenguaje de Marcado de Hipertexto</dd>
+            <dt>CSS</dt>
+            <dd>Hoja de estilos de cascada</d>
+            <dt>JS</dt>
+            <dd>Java Script</dd>
+        </dl>
+    </div>
+
+     <div>
+        <h3>Listas anidadas</h3>
+        <p>Desarrolo Web</p>
+        <dl>
+            <ul>
+                <li>Front-end</li>
+                <ol type="I">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Java script </li>
+                </ol>
+                <li>Back-end</li>
+                 <ol type="A">
+                    <li>NodeJS</li>
+                    <li>MySQL</li>
+                    <li>Arch</li>
+                </ol>
+            </ul>
+        </dl>
+    </div>
+    
+    <div>
+        <h2>Formulario</h2>
+        <form action="" method="get">
+            <label form="username">Nombre de usuario</label>
+            <input type="text" id="username" name="usuario">
+            <br><br>
+            <label for="password">Contarseña</label>
+            <input type="password" id="password" name="password">
+            <br><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    
+     <h3>Formulario de campo de entrada de varias lineas</h3> 
+        <form action="validar.js" method="post">  
+            <label for="name">Nombre</label>
+            <input placeholder="Ingresa tu nombre" type="text" id="name" name="name" required>
+
+            <br><br>
+        
+            <label for="opinion">Comentario</label>
+            <textarea id="opinion" name="opinion" placeholder="Tu opinión es importante" required rows="5" cols="40"></textarea>
+
+            <br><br>
+            <button type="submit">Enviar comentario</button>
+        </form>
+
+        <hr>
+
+        <h3>Formulario con una lista desplegable de opciones</h3>
+        <form action="/opciones" method="post">
+            <label for="bebidas">Bebidas </label>
+            <select name="bebidas" id="bebidas">
+                <option value="coca-cola">Coca-Cola</option>
+                <option value="pepsi">Pepsi</option>
+                <option value="boing">boing</option>
+                <option value="té">Té</option>
+                <option value="jarrito" selected="selected">Jarrito</option>
+            </select>
+
+            <br><br>
+            <label for="postres">Postres </label>
+            <select name="postres" id="postres">
+                <option value="" disabled selected>Selecciona un postre</option>
+                <option value="pay de limon">Pay de Limón</option>
+                <option value="pay de fresa">Pay de Fresa</option>
+                <option value="flan">Flan</option>
+                <option value="gelatina">Gelatina</option>
+                <option value="pastel">Pastel</option>
+            </select>
+            <br><br>
+            <input type="submit">
+        </form>
+
+        <hr>
+
+        <h3>Formulario con distintos campos de datos</h3>
+        <form action="datos.php" method="post">
+            <fieldset>
+                <legend>
+                    Nombre Completo
+                </legend>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br><br>
+                <label for="ap_Paterno">Ap. Paterno</label>
+                <input type="text" id="ap_Paterno" name="ap_Paterno" required>
+                <br><br>
+                <label for="ap_Materno">Ap. Materno</label>
+                <input type="text" id="ap_Materno" name="ap_Materno" required>
+            </fieldset>
+                            <br><br>
+            <fieldset>
+                <legend>
+                    Otros datos
+                </legend>
+                <label for="Fecha de nacimiento">Fecha de nacimiento</label>
+                <input type="date" id="Fecha de nacimiento" name="Fecha de nacimiento" required>
+                <br><br>
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" name="edad" required min="18" max="90">
+                <br><br>
+                <label for="numero_cuenta">Número de cuenta </label>
+                <input type="text" id="numero_cuenta" name="numero_cuenta" required pattern="[0-9]{9}" minlength="9" maxlength="9">
+                <br><br>
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+            </fieldset>
+                            <br><br>
+            <fieldset>
+                <legend>Dirección</legend>
+                <label for="calle">Calle</label>
+                <input type="text" id="calle" name="calle" required>
+                <br><br>
+                <label for="numero">Número domicilial</label>
+                <input type="number" id="numero" name="numero" required>
+                <br><br>
+                <label for="colonia">Colonia</label>
+                <input type="text" id="colonia" name="colonia" required>
+            </fieldset>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+
+     </div>
+
+    </body>
+</html>
