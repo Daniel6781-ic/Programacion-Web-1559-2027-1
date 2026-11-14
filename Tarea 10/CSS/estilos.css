@@ -1,0 +1,25 @@
+.fondo-Freddy {
+    
+    background-image: linear-gradient(to top, rgba(161, 26, 210, 0.5), rgba(238, 151, 151, 0.5)), url(../Imagenes/five-nights-at-freddys.jpg);
+    /*permite agregar imagenes como fondo de un elemento o de un contenedor*/
+    background-size: cover;     /*permite ajustar el tamaño de la imagen de fondo*/
+
+    background-repeat: no-repeat;   /*permite controlar si la imagen de fondo se repite o no*/
+
+    background-position: center;    /*ayuda a ajustar la posición inicial de la imagen de fondo */
+
+    background-attachment: fixed;   /*sirve para controlar el desplazamiento de la imagen de fondo: si se desplaza con el contenido o se
+                                    queda fija*/
+}
+
+.fondo-conjuro {
+
+/*la siguiente linea de código se trata de una sintaxis practicamente lineal en donde se describen las propiedades que tendra una imagen 
+siguiendo la siguiente estructura: (imagen) position/size repeat attachment, tambien se puede agregar gradiante*/
+
+    background: url(../Imagenes/el\ conjuro\ 3.jpg) center/contain no-repeat scroll rgba(234, 218, 189, 0.389); 
+    width: 300px;
+    height: 1000px;
+    border: 2px solid #000;
+
+}
