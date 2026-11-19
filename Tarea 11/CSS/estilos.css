@@ -1,0 +1,108 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#encabezado{
+    background-color: black;
+    color: white;
+
+
+/*El relieve o padding: espacio entre el contenido del elemento y su borde. Se aplican los valores en sentido
+horario top, right, bottom y left
+1valor: t, r, b, l   2valores:tb, el    3 valores: t, rl, b*/
+
+padding: 15px;
+
+/*El margen es el espacio que hay entre un elemento HTML y el resto de los elementos HTML a su alrededor*/
+margin: 15px 15px;
+
+/*El borde es el contorno visual alrededor de nuestro elemento HTML (dentro de el podemos encontrar el contenido del elemento y su 
+relleno)
+Valores (solid, dotted, dashed, double, groove, ridge, inset, outset, hidden y none)*/
+
+border: 10px ridge rgb(0, 195, 255);
+border-top-style: double;
+border-left-color: red;
+border-right-color: red;
+border-bottom-color: 2px;
+border-radius: 10%;
+
+/*box-shadow: Se puede utilizar para crear efectos de sombra al rededor del borde de un elemento, se debe especificar los valores:
+desplazamiento-horizontal desplazamiento-vertical radio-desenfoque radio-propagación color*/
+
+box-shadow: -5px -5px 5px 5px red;
+
+}
+
+#encabezado h1{
+    text-decoration: underline;
+}
+
+.introduccion{
+    background-color: black;
+    color: wheat;
+    border: 2px solid rgb(0, 195, 255);
+    padding: 5px;
+}
+
+.introduccion p{
+    width: 50%;
+    height: 50%;
+    padding: 10px;
+    border: 2px dotted rgb(181, 186, 23);
+    box-sizing: border-box;
+    margin: 10px auto;
+    font-family: agrave pro;
+
+}
+
+.introduccion span {
+    display: inline-block;
+    width: 50%;
+    height: 50%;
+    border: 2px dotted rgb(0,195,255);
+    padding: 2px;
+    margin: 2px;
+    box-sizing: border-box;
+
+}
+
+.texto-fuente{
+    background-color: black;
+    color: aliceblue;
+}               
+
+.propiedades-texto H2{
+    padding: 5px;
+    text-align: center;
+    text-shadow: 2px 2px 3px rgb(198, 27, 27);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+
+}
+
+.propiedades-texto p{
+    padding: 8px;
+    text-align: justify;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    word-spacing: 15px;
+}
+
+.propiedades-fuente H2{
+    padding: 5px;
+    text-align: center;
+    text-shadow: 2px 2px 3px gray;
+    font-family: Bebas Neue;
+    font-size: 35px;
+}
+
+.propiedades-fuente p{
+    padding: 8px;
+    text-align: justify;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-style: oblique;
+
+}
