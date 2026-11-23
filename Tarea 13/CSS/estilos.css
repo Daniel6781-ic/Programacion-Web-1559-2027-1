@@ -1,0 +1,53 @@
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    padding: o;
+    margin: 0;
+    background-image: linear-gradient(to top, black, rgb(8, 18, 97)); 
+    background-repeat: no-repeat;
+    color: aliceblue;
+}
+
+#encabezado{
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 0.2rem solid rgb(189, 118, 118);
+}
+
+#encabezado h1{
+    text-align: center;
+    text-shadow: 0.2rem, 0.2rem, 0.2rem, rgba(176, 217, 13, 0.56);
+}
+
+.contenedor_tabla{
+    border: 0.2rem solid rgb(201, 201, 95);
+    width: 50%;
+    overflow-x: scroll;
+}
+
+.tabla_alumnos{
+    border: 0.2rem solid green;
+    border-collapse: collapse;
+    text-align: center;
+    width: 100rem;
+}
+
+.tabla_alumnos th, .tabla_alumnos td{
+    border: 0.2rem solid green;
+    padding: 0.5rem;
+}
+
+.tabla_alumnos tr:nth-child(even){
+    background-color: beige;
+    color: black;
+}
+
+.tabla_alumnos tr:hover{
+    background-color: aqua;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+}
